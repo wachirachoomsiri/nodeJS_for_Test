@@ -162,7 +162,7 @@ app.use("/api/v1/activity", v1ActivityRouter);
 const v1ProductRoutes = require("./routes/v1/productRoutes");
 app.use("/api/v1/product", v1ProductRoutes);
 
-const v1OrderRoutes = require("./routes/v1/OrderRoutes");
+const v1OrderRoutes = require("./routes/v1/orderRoutes");
 app.use("/api/v1/order", v1OrderRoutes);
 
 // catch 404 and forward to error handler
