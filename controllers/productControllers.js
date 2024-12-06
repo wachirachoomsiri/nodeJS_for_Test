@@ -33,6 +33,7 @@ const product_delete = async (req, res) => {
     let { id } = req.params;
     try {
         let { deletedCount } = await Product.deleteOne({ _id: id, 'seller.userId': req.user.userId });
+
         if (deletedCount == 0) {
             return res.status(404).json({
                 status: "Not Found",
